@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.min.js" charset="utf-8"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+    body{
+        background-color: silver;
+    }
+    .functions{
+        width: 800px;
+        height: 600px;
+        border: solid thin gray;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 14%;
+        
+        
+    }
+        
+        
+        
+        
+    
+
+</style>
+<body>
+    <h1>My Bootcamp Functions Unit Tests</h1>
+    <div id="mocha" class="functions">
+    <script>
+        // the mocha test style to use - we use BDD - Behviour Driven Development
+        mocha.setup('bdd');
+        //ensure the assert function is available
+        var assert = chai.assert;
+    </script>
+    
+    <script src="greet.js" charset="utf-8"></script>
+    <script src="tests/greet.tests.js" charset="utf-8"></script> 
+    <script src="fromWhere.js" charset="utf-8"></script>
+    <script src="tests/fromWhere.tests.js" charset="utf-8"></script> 
+    <script src="isWeekday.js" charset="utf-8"></script>
+    <script src="tests/isWeekday.tests.js" charset="utf-8"></script> 
+    <script src="totalPhoneBill.js" charset="utf-8"></script>
+    <script src="tests/totalPhoneBill.tests.js" charset="utf-8"></script> 
+    <script src="yearsAgo.js" charset="utf-8"></script>
+    <script src="tests/yearsAgo.tests.js" charset="utf-8"></script> 
+    <script src="findsItemsOver20.js" charset="utf-8"></script>
+    <script src="tests/findItemsOver20.tests.js" charset="utf-8"></script> 
+    
+    
+
+
+    <script>
+        // configure and run mocha
+        mocha.checkLeaks();
+        mocha.run();
+    </script>  
+    </div>
+
+     
+</body>
+</html>
